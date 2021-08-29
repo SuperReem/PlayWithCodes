@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Coding Challenge</title>
+ <!-- Font Awesome Library -->
+ <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css"/>
+ <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css"/>
+<style type="text/css" media="screen">
+    body{
+       background-color: #181929; 
+       font-family: sans-serif;
+       padding-bottom: 2rem;
+    }
+    #editor { 
+        max-width: 900px;
+        height: 550px;
+        margin: auto;
+       
+    }
+   
+    .header{
+        background: linear-gradient(to right, #531FC1, #3F85C6, #A082E0);
+        max-width: 900px;
+        margin: auto;
+        color: white;
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+        text-align: center;
+        font-weight: 100;
+        font-size: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .container{
+        margin-top: 5rem;
+    }
+    li{
+       margin-right: 1em;
+       border: 1px solid rgb(212, 212, 212);
+       border-radius: 10px;
+       padding: 12px;
+       cursor: pointer;
+    }
+    label{
+        align-self: center;
+        margin-left: 2em;
+    }
+    @media (max-width: 414px) {
+        li{
+            padding-top: 10px;
+            padding-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 0px;
+            margin-left: 1.5em;
+        }
+        .header{
+            font-size: 26px;
+        }
+        .container{
+        margin-top: 3rem;
+    }
+        
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div></div>
+        <label>You have a coding challenge!</label>
+        <li class="fas fa-play"></li>
+    </div>
+    <div id="cont">
+        <div id="editor">
+    //sort the array elements in ascending order 
+
+    function sort(array){
+            
+    
+ }
+
+        </div>
+    </div>
+</div>
+<script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/twilight");
+    editor.getSession().setMode("ace/mode/javascript");
+    editor.resize();
+editor.renderer.updateFull();
+</script>
+</body>
+</html>

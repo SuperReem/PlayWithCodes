@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css"/>
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css"/>
+
+    <style>
+      body{
+          background-color: #181929;
+          font-family: sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+      .big-container{
+          width: 60%;
+          margin: auto;
+          margin-top: 0.5rem;
+          display: flex;
+          flex-direction: column;
+      }
+      .container{
+          display:flex;
+          flex-direction: column;
+          min-height: 300px;
+          border-radius: 12px;
+          align-items: center;
+     
+      }
+      .boxes{
+        background-color: #2D2C41;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0.5rem;
+        width: 75%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem; 
+        border-radius: 15px;
+        color: rgb(231, 231, 231);
+        border: none;
+        margin-bottom: 4rem;
+      }
+      .boxes > a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      img{
+        margin: auto;
+        margin-bottom: -20px;
+        z-index:1;
+       
+      }
+      .header{
+          width: 90%;
+          border-radius: 20px;
+          display: flex;
+          color: white;
+          font-size: 20px;
+          align-items: center;
+          border: none;
+          padding: 0.4rem;
+          font-weight: 100;
+          
+          margin-bottom: 5rem;
+      }
+      button:hover{
+          cursor: pointer;
+          
+      }
+      label{
+       margin-top: 0.5rem;
+       margin-bottom: 0.5rem;
+       margin-left: 0.5rem;
+      }
+      .Games-logos{
+        width: 150px;
+        height: 150px;
+      }
+      label > li{
+        margin-right: 20px;
+        opacity: 90%;
+      }
+      .divider{
+        background-color: rgb(185, 185, 185);
+        height: 1px;
+        width: 100%;
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
+       
+      }
+      .two{
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      #logout{
+        border: 1px solid rgb(194, 194, 194);
+        background-color: transparent;
+        border-radius: 30px;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        color: white;
+        font-size: 20px;
+      }
+      .lang-icons{
+        width: 22px;
+        height: 22px;
+        padding-top: 0%;
+        margin-top: 0%;
+        margin-right: 1rem;
+      }
+      .cont1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+       
+      }
+     .points{
+       background-color: rgb(48, 48, 223);
+       padding: 0.7rem;
+       color: white;
+       border-radius: 22px;
+       margin-left: 33rem;
+     }
+     .Star{
+       color: yellow;
+     }
+     .container2{
+            bottom: 0;
+            background-color: #2D2C41;
+            position: fixed;
+            width: 100%;
+            height: 90px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            z-index: 1;
+
+        }
+        .sub-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 50px;
+            width: 80%;
+        }
+        .light{
+            color: rgb(221, 221, 221) !important;
+            cursor: pointer;
+        }
+        .nav-btn{
+            background-color: transparent;
+            border: none;
+        }
+      @media (max-width: 414px){
+        .big-container{
+          width: 95%;
+          margin-top: 0.5rem;
+        }
+        .header{
+          width: 95%;
+          padding: 0.6rem;
+        }
+        .points{
+          margin-left: 9rem;
+        }
+      }
+    </style>
+</head>
+
+
+  <body>
+    
+<div class="big-container">
+    <div class="header"><li class="fas fa-user-circle fa-2x"></li>&nbsp;&nbsp;Reem01
+    <div class="points"><li class="fas fa-star Star"></li>&nbsp;1754</div>
+    </div>
+    <div class="container">
+      <div class="boxes">
+         <label><li class="fas fa-pen fa-2x"></li>Edit Profile</label>
+         <div class="divider"></div>
+         <label><li class="fas fa-user-friends fa-2x"></li>My friends</label>
+        </div>
+      
+      <div class="boxes two">
+        <img src="imgs/award 2.svg">
+        <label style="margin-top: 4rem; font-size: 25px;">My Achievements</label>
+      </div>
+      <div class="boxes two">
+        <div class="progress-container">
+          <div class="cont1"><img src="imgs/swift 2.svg" class="lang-icons"><progress id="file" value="32" max="100"> 32%</progress></div>
+          <div class="cont1"><img src="imgs/python 2.svg" class="lang-icons"><progress id="file" value="2" max="100"> 32% </progress></div>
+          <div class="cont1"><img src="imgs/javascript 2.svg" class="lang-icons"><progress id="file" value="50" max="100"> 32% </progress></div>
+          <div class="cont1"><img src="imgs/c 2.svg" class="lang-icons"><progress id="file" value="0" max="100"> 32% </progress></div>
+          <div class="cont1"><img src="imgs/java 2.svg" class="lang-icons"><progress id="file" value="96" max="100"> 32% </progress></div>
+        </div>
+      </div>
+      <button id="logout">Log out</button>
+</div>
+</div>
+<div class="container2">
+  <div class="sub-container">
+    <button id="lb" class="nav-btn"><a href="Leaderboard.html"><li class="fas fa-trophy fa-3x light"></li></a></button>
+    <button id="play" class="nav-btn"><a href="SelectLang.html"><li class="fas fa-rocket fa-3x light"></li></a></button>
+    <button id="profile" class="nav-btn"><a href="Profile.html"><li class="fas fa-user fa-3x light"></li></a></button>
+ </div>
+</div>
+  </body>
+
+
+
+</html>

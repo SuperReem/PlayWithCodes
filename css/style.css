@@ -1,0 +1,41 @@
+body {
+    background-color: #181929; 
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16rem;
+}
+
+i {
+    color: aliceblue;
+    flex-basis: 60px;
+}
+
+p {
+    width: 360px;
+    color: #8f8f8f;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+}
+    
+
+button {
+    cursor: pointer;
+    width: 200px; 
+    height: 35px; 
+    border-radius: 20px; 
+    background-color: transparent; 
+    border-color: #6956ED; 
+}
+
+a {
+    text-decoration: none;
+    color: white; 
+}

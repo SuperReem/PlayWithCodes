@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+      body{
+          background-color: #181929;
+          display: flex;
+          font-family: sans-serif;
+      }
+      .big-container{
+          width: 60%;
+          margin: auto;
+          margin-top: 12rem;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+      }
+      .container{
+          display:flex;
+          flex-direction: column;
+          min-height: 300px;
+          border-radius: 12px;
+          align-items: center;
+     
+      }
+      .boxes{
+        background-color: #2D2C41;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        margin-bottom: 3rem;
+        padding: 2rem;
+        border-radius: 15px;
+        text-align: center;
+        color: rgb(231, 231, 231);
+        border: none;
+      }
+      .boxes > a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+      img{
+        margin: auto;
+        margin-bottom: -20px;
+        z-index:1;
+       
+      }
+      .title{
+          width: 40%;
+          border-radius: 20px;
+          align-self: center;
+          color: white;
+          font-size: 1٥px;
+          background: linear-gradient(to right, #531FC1, #3F85C6, #A082E0);
+          border: none;
+          padding: 0.4rem;
+          font-weight: 200;
+          text-align: center;
+          margin-bottom: 5rem;
+      }
+      button:hover{
+          cursor: pointer;
+          
+      }
+      label{
+        margin-top: 3rem;
+      }
+      .Games-logos{
+        width: 150px;
+        height: 150px;
+      }
+      @media (max-width: 414px){
+        .big-container{
+          width: 80%;
+          margin-top: 5rem;
+        }
+        .title{
+          width: 95%;
+          padding: 0.6rem;
+        }
+      }
+    </style>
+</head>
+
+
+  <body>
+    
+<div class="big-container">
+    <div class="title">Select a game</div>
+    <div class="container">
+      <button class="boxes">
+        <a href="SelectPlayer.html">
+        <img src="imgs/image 12 (1).svg" class="Games-logos">
+        <label>Ludo Star</label>
+        </a>
+      </button>
+      <button class="boxes">
+        <a href="SelectPlayer.html">
+        <img src="imgs/index.png" class="Games-logos">
+        <label>Monopoly</label>
+        </a>
+      </button>
+    </div>
+</div>
+
+  </body>
+
+
+
+</html>

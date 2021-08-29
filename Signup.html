@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+      body{
+          background-color: #181929;
+          display: flex;
+          font-family: sans-serif;
+      }
+      .big-container{
+          width: 90%;
+          margin: auto;
+          margin-top: 12rem;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+      }
+      .container{
+          background-color: #2D2C41;
+          display: flex;
+          min-height: 300px;
+          border-radius: 12px;
+     
+      }
+      .sub-container{
+          display: flex;
+          flex-direction: column;
+          width: 78%;
+          margin: auto;
+          padding: 4rem
+      }
+      img{
+        margin: auto;
+        margin-bottom: -20px;
+        z-index:1;
+       
+      }
+      input{
+          background-color: transparent;
+          border: 1px solid #b6b6b6;
+          border-radius: 20px;
+          width: 96%;
+          align-self: center;
+          margin-bottom: 1rem;
+          padding: 0.4rem;
+      }
+      a{
+          align-self: center;
+          color: #838383;
+          margin-bottom: 1.5rem;
+          margin-top: 1rem;
+          font-size: 13px;
+      }
+      button{
+          width: 70%;
+          border-radius: 20px;
+          align-self: center;
+          color: white;
+          font-size: 13px;
+          background: linear-gradient(to right, #531FC1, #3F85C6, #A082E0);
+          border: none;
+          padding: 0.3rem;
+          margin-top: 1.5rem;
+      }
+      button:hover{
+          cursor: pointer;
+          
+      }
+      button > a{
+        text-decoration: none;
+        color: white;
+      }
+      @media (max-width: 414px){
+        .big-container{
+        margin-top: 9rem;
+        }
+      }
+    </style>
+</head>
+
+
+  <body>
+    
+<div class="big-container">
+    <img src="imgs/LogoSvg.svg">
+    <div class="container">
+      <div class="sub-container">
+        <input type="text" placeholder="Username">
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button><a href="SelectLang.html">Sign up</a></button>
+      </div>
+    </div>
+</div>
+
+  </body>
+
+
+
+</html>

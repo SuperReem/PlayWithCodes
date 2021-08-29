@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+      body{
+          background-color: #181929;
+          display: flex;
+          font-family: sans-serif;
+      }
+      .big-container{
+          width: 90%;
+          margin: auto;
+          margin-top: 13rem;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+      }
+      .sub-container{
+          display: flex;
+          flex-direction: column;
+          width: 33%;
+          margin: auto;
+          padding: 4rem;
+          margin-top: 3rem;
+      }
+      img{
+        margin: auto;
+        margin-bottom: -20px;
+        z-index:1;
+       
+      }
+      button{
+          width: 55%;
+          border-radius: 20px;
+          align-self: center;
+          color: white;
+          font-size: 13px;
+          background-color: transparent;
+          border: 1px solid #a8a8a8;
+          padding: 0.3rem;
+          margin-top: 1.5rem;
+      }
+      button >a{
+        text-decoration: none;
+        color: white;
+      }
+      button:hover{
+          cursor: pointer;  
+      }
+      @media (max-width: 414px){
+        .big-container{
+          margin-top: 10rem;
+        }
+        .sub-container{
+          width: 60%;
+        }
+        button{
+          width: 75%;
+        }
+      }
+    </style>
+</head>
+
+
+  <body>
+    
+<div class="big-container">
+    <img src="imgs/tag.svg">
+      <div class="sub-container">
+        <button><a href="Signup.html">Sign up</a></button>
+        <button><a href="Login.html">Log in</a></button>
+      </div>
+</div>
+
+  </body>
+
+
+
+</html>
